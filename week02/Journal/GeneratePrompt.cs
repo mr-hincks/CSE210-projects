@@ -4,7 +4,7 @@ using System.IO;
 
 public class GeneratePrompt
 {
-    private List<string> _prompts = new List<string>
+    public List<string> _prompts = new List<string>
     {
         "Who new did you meet today?",
         "What could you have done better?",
@@ -13,7 +13,7 @@ public class GeneratePrompt
         "What made you smile today?",
         "What challenge did you face today."
     };
-    private Random _random = new Random();
+    public Random _random = new Random();
     public string GetRandomPrompt()
     {
         return _prompts[_random.Next(_prompts.Count)]; 

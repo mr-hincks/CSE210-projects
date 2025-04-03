@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 public class Journal
 {
-    private List<Entry> _entries = new List<Entry>();
+    public List<Entry> _entries = new List<Entry>();
     public void AddEntry(Entry newEntry)
     {
         _entries.Add(newEntry);
