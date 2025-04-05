@@ -37,7 +37,7 @@ static Scripture LoadRandomScripture(string scripture)
     string[] parts = line.Split(' ');
     string book = parts[0];
     string[] chapterAndVerse = parts[1].Split(':');
-    int chapter = int.Parse(chapterAndVerse[0]);
+    int chapter = int.Parse(chapterAndVerse[1]);
 
     Reference reference;
 
